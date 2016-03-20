@@ -16,9 +16,7 @@ import com.levko.roma.levkohomework11.View.PaintView;
  */
 public class PaintFragment extends Fragment implements View.OnClickListener {
     private PaintView mPaintView;
-    private Button btn_black,
-            btn_blue,
-            btn_red;
+    private Button btnBlack, btnBlue, btnRed;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,16 +28,16 @@ public class PaintFragment extends Fragment implements View.OnClickListener {
     }
 
     private void findViews(View v) {
-        btn_black = (Button) v.findViewById(R.id.btn_color_black_PF);
-        btn_blue = (Button) v.findViewById(R.id.btn_color_blue_PF);
-        btn_red = (Button) v.findViewById(R.id.btn_color_red_PF);
+        btnBlack = (Button) v.findViewById(R.id.btn_color_black_PF);
+        btnBlue = (Button) v.findViewById(R.id.btn_color_blue_PF);
+        btnRed = (Button) v.findViewById(R.id.btn_color_red_PF);
         mPaintView = (PaintView) v.findViewById(R.id.paint_view_PF);
     }
 
     private void setListeners() {
-        btn_black.setOnClickListener(this);
-        btn_blue.setOnClickListener(this);
-        btn_red.setOnClickListener(this);
+        btnBlack.setOnClickListener(this);
+        btnBlue.setOnClickListener(this);
+        btnRed.setOnClickListener(this);
     }
 
     @Override

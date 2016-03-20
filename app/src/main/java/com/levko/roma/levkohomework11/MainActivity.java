@@ -11,18 +11,13 @@ import com.levko.roma.levkohomework11.Fragments.MoveFragment;
 import com.levko.roma.levkohomework11.Fragments.PaintFragment;
 
 public class MainActivity extends AppCompatActivity {
-
-    private boolean changeFragment = true;
+    boolean switchFragment = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViews();
         setFragments(new MoveFragment());
-    }
-
-    private void findViews() {
     }
 
     private void setFragments(Fragment fragment) {
@@ -41,11 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (changeFragment) {
+        if (switchFragment) {
             setFragments(new PaintFragment());
+            switchFragment = false;
         } else {
             setFragments(new MoveFragment());
         }
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 }

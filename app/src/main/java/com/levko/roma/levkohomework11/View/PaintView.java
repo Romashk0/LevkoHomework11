@@ -17,6 +17,8 @@ import java.util.List;
  */
 public class PaintView extends View {
 
+    private static final float STROKE_WIDTH = 10.0f;
+
     private Paint mPaint;
     private List<Paint> paintList;
     private Path mPath;
@@ -41,7 +43,7 @@ public class PaintView extends View {
         mPaint = new Paint();
         paintList = new ArrayList<>();
         pathList = new ArrayList<>();
-        addNewLayer(mPaint, true, Paint.Style.STROKE, 10.0f, Color.BLACK);
+        addNewLayer(mPaint, true, Paint.Style.STROKE, STROKE_WIDTH, Color.BLACK);
     }
 
     private void addNewLayer(Paint paint, boolean AntiAlias, Paint.Style style, float strokeWidth, int color) {
@@ -56,7 +58,7 @@ public class PaintView extends View {
 
     public void setPaintColor(int color) {
         mPaint = new Paint();
-        addNewLayer(mPaint, true, Paint.Style.STROKE, 10.0f, color);
+        addNewLayer(mPaint, true, Paint.Style.STROKE, STROKE_WIDTH, color);
     }
 
     @Override

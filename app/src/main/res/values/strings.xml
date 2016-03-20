@@ -2,6 +2,8 @@
     <string name="app_name">LevkoHomework11</string>
     <string name="menu_item">Another fragment</string>
     <string name="new_button">Button</string>
-    <string name="new_text_view">TextView</string>
+    <string name="new_text_view">Text</string>
     <string name="new_image">Image</string>
+    <string name="created_btn">Кнопка;)</string>
+    <string name="created_tv">Любой\n текст</string>
 </resources>
