@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LevkoHomework11</string>
+    <string name="menu_item">Another fragment</string>
+    <string name="new_button">Button</string>
+    <string name="new_text_view">TextView</string>
+    <string name="new_image">Image</string>
+</resources>
