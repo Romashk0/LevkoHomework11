@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             switchFragment = false;
         } else {
             setFragments(new MoveFragment());
+            switchFragment = true;
         }
         return super.onOptionsItemSelected(item);
     }
